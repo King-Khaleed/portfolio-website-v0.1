@@ -1,30 +1,32 @@
 import { Search, PenTool, Code, Rocket, Wrench } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const processSteps = [
   {
     icon: Search,
-    title: "1. Discovery & Strategy",
-    description: "We start by diving deep into your project goals, target audience, and technical requirements. This phase is all about aligning our visions and creating a solid roadmap for success.",
+    title: "1. Discovery Call (1-2 Days)",
+    description: "We'll have a quick chat to understand your business and what you need from a website. I'll provide a clear quote and timeline.",
   },
   {
     icon: PenTool,
-    title: "2. Design & Prototyping",
-    description: "I translate our strategy into tangible designs, focusing on user experience (UX) and user interface (UI). We'll create wireframes and prototypes to visualize the dApp's flow and feel.",
+    title: "2. Planning & Design (3-5 Days)",
+    description: "I create a simple, professional design that reflects your brand and is easy for your customers to use. You'll approve it before we build.",
   },
   {
     icon: Code,
-    title: "3. Development & Testing",
-    description: "This is where the magic happens. I write clean, secure, and efficient code for both smart contracts and the frontend, following best practices and conducting rigorous testing throughout.",
+    title: "3. Development (5-10 Days)",
+    description: "I build your fast, mobile-friendly website. I handle all the technical details so you don't have to worry about a thing.",
   },
   {
     icon: Rocket,
-    title: "4. Deployment & Launch",
-    description: "After thorough audits and your final approval, we deploy the smart contracts to the mainnet and launch the dApp. I'll handle the entire deployment process to ensure a smooth release.",
+    title: "4. Launch (1 Day)",
+    description: "After your final review and approval, I take your website live on the internet for the world to see.",
   },
   {
     icon: Wrench,
-    title: "5. Maintenance & Support",
-    description: "The journey doesn't end at launch. I offer ongoing support and maintenance packages to ensure your application remains secure, updated, and performs optimally as the ecosystem evolves.",
+    title: "5. Support & Handover",
+    description: "I'll show you how to manage your site and remain available for any questions or future updates you might need.",
   },
 ];
 
@@ -34,7 +36,7 @@ export default function ProcessPage() {
       <section className="text-center mb-20">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-4">My Process</h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-          A structured and collaborative approach to bring your Web3 vision to life, from idea to launch.
+          A clear and efficient process to get your business online, fast.
         </p>
       </section>
 
@@ -58,6 +60,21 @@ export default function ProcessPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+       <section className="mt-20 text-center">
+        <h2 className="text-3xl font-bold mb-4">Ready to Start?</h2>
+        <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+          Let's take the first step to growing your business online.
+        </p>
+        <div className="flex justify-center gap-4">
+          <Button asChild size="lg">
+            <Link href="/contact">Begin Your Project</Link>
+          </Button>
+          <Button asChild size="lg" variant="outline">
+            <Link href="/contact">Schedule Your Free Consultation</Link>
+          </Button>
         </div>
       </section>
     </div>

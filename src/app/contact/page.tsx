@@ -9,7 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Github, Linkedin, MessageSquare, CheckCircle } from "lucide-react";
+import { Mail, MessageSquare, CheckCircle, Smartphone } from "lucide-react";
 import Link from "next/link";
 
 
@@ -37,7 +37,7 @@ export default function ContactPage() {
     console.log(values);
     toast({
       title: "Message Sent!",
-      description: "Thanks for reaching out. I'll get back to you soon.",
+      description: "Thank you for reaching out. I will get back to you shortly.",
     });
     form.reset();
   }
@@ -47,7 +47,7 @@ export default function ContactPage() {
       <section className="text-center mb-12">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-4">Get In Touch</h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-          Have a project in mind or just want to say hello? I'd love to hear from you.
+          Ready to discuss your project? Reach out for a free, no-obligation consultation.
         </p>
       </section>
 
@@ -70,7 +70,7 @@ export default function ContactPage() {
                         <FormItem>
                           <FormLabel>Full Name</FormLabel>
                           <FormControl>
-                            <Input placeholder="John Doe" {...field} />
+                            <Input placeholder="Your full name" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -83,7 +83,7 @@ export default function ContactPage() {
                         <FormItem>
                           <FormLabel>Email Address</FormLabel>
                           <FormControl>
-                            <Input placeholder="you@example.com" {...field} />
+                            <Input placeholder="Your email address" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -97,7 +97,7 @@ export default function ContactPage() {
                       <FormItem>
                         <FormLabel>Subject</FormLabel>
                         <FormControl>
-                          <Input placeholder="Regarding a dApp project" {...field} />
+                          <Input placeholder="e.g., Website for my business" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -110,13 +110,13 @@ export default function ContactPage() {
                       <FormItem>
                         <FormLabel>Your Message</FormLabel>
                         <FormControl>
-                          <Textarea placeholder="Tell me more about your project..." className="min-h-[150px]" {...field} />
+                          <Textarea placeholder="Tell me a little about your business and what you need." className="min-h-[150px]" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
-                  <Button type="submit" size="lg" className="w-full md:w-auto">Send Message</Button>
+                  <Button type="submit" size="lg" className="w-full md:w-auto">Send Your Request</Button>
                 </form>
               </Form>
             </CardContent>
@@ -134,12 +134,8 @@ export default function ContactPage() {
                 <a href="mailto:hello@web3wizard.dev" className="hover:text-primary transition-colors">hello@web3wizard.dev</a>
               </div>
               <div className="flex items-center gap-3">
-                <Github className="h-5 w-5 text-muted-foreground" />
-                <Link href="https://github.com" target="_blank" className="hover:text-primary transition-colors">GitHub Profile</Link>
-              </div>
-              <div className="flex items-center gap-3">
-                <Linkedin className="h-5 w-5 text-muted-foreground" />
-                <Link href="https://linkedin.com" target="_blank" className="hover:text-primary transition-colors">LinkedIn Profile</Link>
+                <Smartphone className="h-5 w-5 text-muted-foreground" />
+                <Link href="#" target="_blank" className="hover:text-primary transition-colors">Message Me on WhatsApp</Link>
               </div>
             </CardContent>
           </Card>
@@ -152,7 +148,7 @@ export default function ContactPage() {
             </CardHeader>
             <CardContent>
               <p className="text-lg font-medium">Currently available for new projects.</p>
-              <p className="text-muted-foreground mt-1">Ready to start in Q3 2024.</p>
+              <p className="text-muted-foreground mt-1">Response within 24 hours.</p>
             </CardContent>
           </Card>
         </div>

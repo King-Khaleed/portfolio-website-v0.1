@@ -6,8 +6,8 @@ import Footer from '@/components/footer';
 import {Toaster} from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Web3 Wizard Portfolio',
-  description: 'Building the Future of the Decentralized Web',
+  title: 'Web3 Wizard | Professional Websites for Nigerian Businesses',
+  description: 'I build affordable, mobile-friendly websites that help Nigerian small businesses get more customers online. Get your free quote today.',
   icons: {
     icon: '/favicon.ico',
   },
