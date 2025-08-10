@@ -83,7 +83,7 @@ export default function AboutPage() {
         <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
           A professional website is the first step. Let's build it together.
         </p>
-        <div className="flex justify-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg">
               <Link href="/contact">Let’s Build Your Online Presence</Link>
             </Button>

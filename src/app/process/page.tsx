@@ -74,7 +74,7 @@ export default function ProcessPage() {
         <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
           Take the first step towards establishing your definitive online presence.
         </p>
-        <div className="flex justify-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Button asChild size="lg">
             <Link href="/contact">Begin Your Project</Link>
           </Button>
