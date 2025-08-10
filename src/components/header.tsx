@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Menu, CodeXml } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -57,6 +57,8 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
+              <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+              <SheetDescription className="sr-only">Main navigation links for mobile devices.</SheetDescription>
               <nav className="flex flex-col space-y-4 pt-8">
                 {navLinks.map((link) => (
                   <Link
