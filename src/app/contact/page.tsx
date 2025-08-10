@@ -139,14 +139,14 @@ export default function ContactPage() {
                 <Mail className="h-5 w-5 text-muted-foreground mt-1" />
                 <div>
                   <p className="font-semibold">Email</p>
-                  <a href="mailto:hello@web3wizard.dev" className="text-muted-foreground hover:text-primary transition-colors">hello@web3wizard.dev</a>
+                  <a href="mailto:thewebwizardinfo@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">thewebwizardinfo@gmail.com</a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Smartphone className="h-5 w-5 text-muted-foreground mt-1" />
                 <div>
                   <p className="font-semibold">WhatsApp</p>
-                   <Link href="#" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">Message Me on WhatsApp</Link>
+                   <Link href="https://wa.me/2349115966703" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">Message Me on WhatsApp</Link>
                 </div>
               </div>
             </CardContent>

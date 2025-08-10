@@ -17,10 +17,10 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex items-center gap-4">
-          <Link href="mailto:hello@web3wizard.dev" target="_blank" rel="noreferrer">
+          <Link href="mailto:thewebwizardinfo@gmail.com" target="_blank" rel="noreferrer">
             <Mail className="h-5 w-5 text-muted-foreground transition-colors hover:text-primary" />
           </Link>
-          <Link href="#" target="_blank" rel="noreferrer">
+          <Link href="https://wa.me/2349115966703" target="_blank" rel="noreferrer">
             <Smartphone className="h-5 w-5 text-muted-foreground transition-colors hover:text-primary" />
           </Link>
         </div>
