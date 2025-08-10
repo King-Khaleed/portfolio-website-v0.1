@@ -54,7 +54,7 @@ export default function Header() {
                 <span className="sr-only">Toggle Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="pr-0">
+            <SheetContent side="right">
               <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               <nav className="flex flex-col space-y-4 pt-8">
                 {navLinks.map((link) => (
