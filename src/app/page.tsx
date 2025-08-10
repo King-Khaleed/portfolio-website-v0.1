@@ -104,19 +104,19 @@ export default function Home() {
             <Card>
               <CardContent className="p-6">
                 <p className="text-muted-foreground italic mb-4">"Our new website brought in so many new customers. He understood exactly what our restaurant needed. A professional and reliable service."</p>
-                <p className-="font-bold">- Mrs. Adebayo, Lagos Bites</p>
+                <p className="font-bold">- Mrs. Adebayo, Lagos Bites</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6">
                 <p className="text-muted-foreground italic mb-4">"I can finally take bookings online! My clients love how easy it is to use the new website. The process was fast and very professional."</p>
-                <p className-="font-bold">- Chioma, Bella's Beauty Lounge</p>
+                <p className="font-bold">- Chioma, Bella's Beauty Lounge</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6">
                 <p className="text-muted-foreground italic mb-4">"The website gives my consultancy a professional look that attracts the right clients. He delivered exactly what he promised, on time."</p>
-                <p className-="font-bold">- Mr. Okoro, Okoro Advisory</p>
+                <p className="font-bold">- Mr. Okoro, Okoro Advisory</p>
               </CardContent>
             </Card>
           </div>
