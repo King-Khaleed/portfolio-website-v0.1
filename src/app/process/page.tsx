@@ -1,32 +1,37 @@
-import { Search, PenTool, Code, Rocket, Wrench } from "lucide-react";
+import { Search, Edit3, Code, Rocket, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const processSteps = [
   {
     icon: Search,
-    title: "1. Discovery Call (1-2 Days)",
-    description: "We'll have a quick chat to understand your business and what you need from a website. I'll provide a clear quote and timeline.",
+    title: "1. Discovery",
+    description: "We begin with a conversation to define your objectives and understand your vision. This ensures the project is aligned with your business goals from the start.",
+    timeline: "1-2 Business Days"
   },
   {
-    icon: PenTool,
-    title: "2. Planning & Design (3-5 Days)",
-    description: "I create a simple, professional design that reflects your brand and is easy for your customers to use. You'll approve it before we build.",
+    icon: Edit3,
+    title: "2. Blueprint",
+    description: "A strategic plan and design wireframe are drafted. We map out the site architecture and user flow before any code is written, ensuring a solid foundation.",
+    timeline: "3-5 Business Days"
   },
   {
     icon: Code,
-    title: "3. Development (5-10 Days)",
-    description: "I build your fast, mobile-friendly website. I handle all the technical details so you don't have to worry about a thing.",
+    title: "3. Execution",
+    description: "The build commences. Clean, efficient code brings the blueprint to life, with a focus on performance, security, and mobile-first optimisation.",
+    timeline: "5-10 Business Days"
   },
   {
     icon: Rocket,
-    title: "4. Launch (1 Day)",
-    description: "After your final review and approval, I take your website live on the internet for the world to see.",
+    title: "4. Launch",
+    description: "After a final review and your approval, the website is deployed. Your new digital asset goes live, ready to perform for your audience.",
+    timeline: "1 Business Day"
   },
   {
-    icon: Wrench,
-    title: "5. Support & Handover",
-    description: "I'll show you how to manage your site and remain available for any questions or future updates you might need.",
+    icon: ShieldCheck,
+    title: "5. Support",
+    description: "My support continues post-launch. I provide the necessary handover materials and remain available to ensure seamless operation and address future needs.",
+    timeline: "Ongoing"
   },
 ];
 
@@ -34,9 +39,9 @@ export default function ProcessPage() {
   return (
     <div className="container mx-auto px-4 py-16 md:py-24">
       <section className="text-center mb-20">
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-4">My Process</h1>
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-4">The Process</h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-          A clear and efficient process to get your business online, fast.
+          A deliberate sequence designed for precision and results.
         </p>
       </section>
 
@@ -51,7 +56,8 @@ export default function ProcessPage() {
                   <step.icon className="h-8 w-8 text-primary" />
                 </div>
                 <h2 className="text-2xl font-bold mb-2">{step.title}</h2>
-                <p className="text-muted-foreground">{step.description}</p>
+                <p className="text-muted-foreground mb-3">{step.description}</p>
+                <p className="text-sm font-medium text-primary">{step.timeline}</p>
               </div>
               <div className="md:w-auto md:order-1 relative hidden md:block">
                 <div className="h-16 w-16 bg-secondary rounded-full flex items-center justify-center border-4 border-background">
@@ -64,9 +70,9 @@ export default function ProcessPage() {
       </section>
 
        <section className="mt-20 text-center">
-        <h2 className="text-3xl font-bold mb-4">Ready to Start?</h2>
+        <h2 className="text-3xl font-bold mb-4">Ready to Begin?</h2>
         <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-          Let's take the first step to growing your business online.
+          Take the first step towards establishing your definitive online presence.
         </p>
         <div className="flex justify-center gap-4">
           <Button asChild size="lg">
