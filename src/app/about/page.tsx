@@ -18,7 +18,7 @@ export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 py-16 md:py-24">
       <section className="text-center mb-20">
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-4">Your Partner in Digital Growth</h1>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter mb-4">Your Partner in Digital Growth</h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
           I build professional, affordable websites that help Nigerian businesses succeed online.
         </p>
