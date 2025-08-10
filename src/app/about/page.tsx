@@ -17,14 +17,14 @@ const techStack = ["Local Insight", "Quality Focused", "Fast Turnaround", "Ongoi
 export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 py-16 md:py-24">
-      <section className="text-center mb-20">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter mb-4">Your Partner in Digital Growth</h1>
+      <section className="text-center mb-16 md:mb-20">
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tighter mb-4">Your Partner in Digital Growth</h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
           I build professional, affordable websites that help Nigerian businesses succeed online.
         </p>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center mb-20">
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center mb-16 md:mb-20">
         <div className="md:col-span-1">
           <Image
             src="https://placehold.co/400x400.png"
@@ -78,7 +78,7 @@ export default function AboutPage() {
         </Card>
       </section>
 
-      <section className="text-center mt-20">
+      <section className="text-center mt-16 md:mt-20">
         <h2 className="text-3xl font-bold mb-4">Ready to Grow Your Business?</h2>
         <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
           A professional website is the first step. Let's build it together.

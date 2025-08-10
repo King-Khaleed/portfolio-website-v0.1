@@ -10,7 +10,7 @@ export default function Home() {
       <section className="relative py-20 md:py-32 bg-secondary">
         <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
         <div className="container mx-auto px-4 text-center relative">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
             I Help Nigerian Businesses Get More Customers Online
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
