@@ -16,7 +16,7 @@ export default function Home() {
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             Professional websites that work 24/7 to grow your business.
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
               <Link href="/contact">Get Your Website Quote <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </Button>
