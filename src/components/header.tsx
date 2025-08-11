@@ -24,12 +24,14 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
-        <div className="mr-4 hidden md:flex">
+        <div className="mr-4 hidden md:flex md:flex-1">
+          {/* Left side */}
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <CodeXml className="h-6 w-6 text-primary" />
             <span className="hidden font-bold sm:inline-block">Web3 Wizard</span>
           </Link>
-          <nav className="flex items-center space-x-6 text-sm font-medium">
+          {/* Centered nav */}
+          <nav className="flex flex-1 items-center justify-center space-x-6 text-sm font-medium">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
